@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Pagina de presentacion</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8"> 
+    <title>Introducción a CSS</title>
+    <link href="css/estilos14.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <h5>Fotografia: </h5>
+    <div class="caja" id="box"><center><img src="foto.jpg" width="270"></div>
+    
+    <h1>Presentacion personal</h1>
+    <div class="caja" >Buenos dias, tardes o noches mi nombres y apellidos es
+        Christhopher Jesus Cusi Mamani, con 21 años de esad, 
+        naci el 01 de setiembre del 2003, soy estudiante
+        del instituto tecsup del curso Diseño y desarrollo de software. </div>
+
+    <h2>Sobre mi:</h2>
+    <div class="caja" >Me apasiona el ajedrez qque es mi hobbie faborito, me gusta
+    la pizza y la musica clasica que tenga intrumento de viollin.
+    Aparte soy una persona puntual.</div>
+
+    <h2>Tecnologias:</h2>
+    <div class="caja" >
+    <ul>
+        <li>Python</li>   
+        <li>Java   </li>
+    </ul></div>
+
+    <h2>Formacion Profesional:</h2>
+    <div class="caja" >
+    <ul>
+        <li>Estudios en curso: Diseño y desarrolo de software</li>   
+        <li>Instituto: Tecsup</li>
+    </ul></div>
+
+    <h2>Idiomas</h2>
+    <div class="caja" >
+    <ul>
+        <li>Español</li>   
+        <li>Ingles basico</li>
+    </ul></div>
+    <script>
+        const box = document.getElementById('box'); 
+        box.addEventListener('mouseover', function handleMouseOver() {
+            box.style.background = 'red';
+        } ) ;
+        box.addEventListener('mouseout', function handleMouseOut() {
+            box.style.background = 'green';
+        } ) ;
+    </script>
+</body>
+</html>
